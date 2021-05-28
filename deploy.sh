@@ -2,7 +2,7 @@ docker build -t lukicalk/multi-client:latest -t lukicalk/multi-client:$SHA -f ./
 docker build -t lukicalk/multi-server:latest -t lukicalk/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t lukicalk/multi-worker:latest -t lukicalk/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push lukicalk/multi-client:latest
-docker push lukicalk/milti-server:latest
+docker push lukicalk/multi-server:latest
 docker push lukicalk/multi-worker:latest
 
 docker push lukicalk/multi-client:$SHA
